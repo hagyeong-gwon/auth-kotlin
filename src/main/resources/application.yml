@@ -1,0 +1,22 @@
+spring:
+  config:
+    import:
+      - application-mysql.yml
+      - application-redis.yml
+
+  security:
+    cors:
+      allowed-headers:
+        - Authorization
+        - Content-Type
+        - apollo-require-preflight
+      allowed-methods: GET,POST,PATCH,DELETE,OPTIONS
+      allow-credentials: false
+      allowed-origins:
+        - "*"
+jwt:
+  secret-key: EBXRXnORg0mmikyUgg8H0ODPQupKJWofumwqo2txD9lGU8apEGkZSmJEhCF5/sqqMWLU5B6w8bpPrHw8T4Uxgg==
+  expire-time:
+    refresh: 1209600000
+    access: 3600000
+  issuer: "auth-server"
