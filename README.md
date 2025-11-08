@@ -151,7 +151,7 @@ ADMIN (모든 권한)
 
 1. **저장소 클론**
 ```bash
-git clone https://github.com/yourusername/tutorial-auth-server.git
+git clone https://github.com/hagyeong-gwon/auth-kotlin.git
 cd tutorial-auth-server
 ```
 
